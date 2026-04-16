@@ -1,0 +1,1362 @@
+[
+    {
+        "pos": 0,
+        "out": "+ npx playwright test\n",
+        "time": 3
+    },
+    {
+        "pos": 1,
+        "out": "[global-setup] On login page: https://login-staging.example.com/?from=https%3A%2F%2Fstaging.example.com%2F\n",
+        "time": 5
+    },
+    {
+        "pos": 2,
+        "out": "[global-setup] OTP page: false\n",
+        "time": 15
+    },
+    {
+        "pos": 3,
+        "out": "[global-setup] Logged in! URL: https://staging.example.com/dead0000000000000000cafe/dashboard\n",
+        "time": 15
+    },
+    {
+        "pos": 4,
+        "out": "[global-setup] Saved storageState to .auth/state.json\n",
+        "time": 15
+    },
+    {
+        "pos": 5,
+        "out": "[global-setup] Initiating account purge...\n",
+        "time": 15
+    },
+    {
+        "pos": 6,
+        "out": "[global-setup] Purge response: {\"data\":{\"id\":\"000000000164bdd41c8cb657\",\"type\":\"GenericObject\",\"job_id\":\"69d7f38c8066321415fd470e\",\"message\":\"Purge initiated\"}}\n",
+        "time": 16
+    },
+    {
+        "pos": 7,
+        "out": "[global-setup] Waiting 60s for purge to settle...\n",
+        "time": 16
+    },
+    {
+        "pos": 8,
+        "out": "[global-setup] Account purge settle complete!\n",
+        "time": 76
+    },
+    {
+        "pos": 9,
+        "out": "\n",
+        "time": 76
+    },
+    {
+        "pos": 10,
+        "out": "Running 125 tests using 4 workers\n",
+        "time": 76
+    },
+    {
+        "pos": 11,
+        "out": "\n",
+        "time": 76
+    },
+    {
+        "pos": 12,
+        "out": "  \u2713    3 e2e/tests/add-omni-targeting-alert.spec.ts:36:7 \u203a Omni targeting alert \u203a Omni targeting alert appears on Pixl Plus campaign (13.1s)\n",
+        "time": 92
+    },
+    {
+        "pos": 13,
+        "out": "  \u2713    1 e2e/tests/add-anyall-to-interests-filters.spec.ts:35:7 \u203a Interests Any/All filter \u203a Default state shows Any mode selected with no interests (14.1s)\n",
+        "time": 92
+    },
+    {
+        "pos": 14,
+        "out": "  \u2713    4 e2e/tests/add-pixl-plus-campaign-type.spec.ts:14:7 \u203a Add Pixl Plus campaign type \u203a Pixl Plus card is visible and styled correctly in the modal (15.4s)\n",
+        "time": 94
+    },
+    {
+        "pos": 15,
+        "out": "  \u2713    2 e2e/tests/add-mode-glue-between-predicates.spec.ts:32:7 \u203a Add mode glue between predicates \u203a No glue shown with zero or one filter set (16.1s)\n",
+        "time": 94
+    },
+    {
+        "pos": 16,
+        "out": "  \u2713    5 e2e/tests/add-omni-targeting-alert.spec.ts:63:7 \u203a Omni targeting alert \u203a Omni targeting alert does not appear on Retargeting campaign (10.2s)\n",
+        "time": 102
+    },
+    {
+        "pos": 17,
+        "out": "  \u2713    7 e2e/tests/add-pixl-plus-campaign-type.spec.ts:46:7 \u203a Add Pixl Plus campaign type \u203a Create a Pixl Plus campaign and verify draft (19.7s)\n",
+        "time": 113
+    },
+    {
+        "pos": 18,
+        "out": "  \u2713    6 e2e/tests/add-anyall-to-interests-filters.spec.ts:52:7 \u203a Interests Any/All filter \u203a Select interest and verify toggle changes description text (23.1s)\n",
+        "time": 115
+    },
+    {
+        "pos": 19,
+        "out": "  \u2713    8 e2e/tests/add-mode-glue-between-predicates.spec.ts:55:7 \u203a Add mode glue between predicates \u203a Default glue is \"or\" with two filter sets and switches to \"and\" (22.5s)\n",
+        "time": 117
+    },
+    {
+        "pos": 20,
+        "out": "  \u2713    9 e2e/tests/add-omni-targeting-alert.spec.ts:85:7 \u203a Omni targeting alert \u203a Omni targeting alert persists after page refresh (19.8s)\n",
+        "time": 122
+    },
+    {
+        "pos": 21,
+        "out": "  \u2718   10 e2e/tests/budget-overspend.spec.ts:29:7 \u203a Budget step validation for overspend campaign \u203a Navigate to campaign edit and reach Budget step (7.7s)\n",
+        "time": 122
+    },
+    {
+        "pos": 22,
+        "out": "  -   14 e2e/tests/budget-overspend.spec.ts:50:7 \u203a Budget step validation for overspend campaign \u203a Set dates and verify recommended budget appears\n",
+        "time": 122
+    },
+    {
+        "pos": 23,
+        "out": "  -   15 e2e/tests/budget-overspend.spec.ts:102:7 \u203a Budget step validation for overspend campaign \u203a Use recommended budget and verify Next is enabled\n",
+        "time": 122
+    },
+    {
+        "pos": 24,
+        "out": "  -   16 e2e/tests/budget-overspend.spec.ts:129:7 \u203a Budget step validation for overspend campaign \u203a Enter budget below minimum and verify Next is disabled\n",
+        "time": 122
+    },
+    {
+        "pos": 25,
+        "out": "  -   17 e2e/tests/budget-overspend.spec.ts:162:7 \u203a Budget step validation for overspend campaign \u203a Enter zero budget and verify validation error\n",
+        "time": 122
+    },
+    {
+        "pos": 26,
+        "out": "  -   18 e2e/tests/budget-overspend.spec.ts:191:7 \u203a Budget step validation for overspend campaign \u203a Enter a large valid budget and verify Next is enabled\n",
+        "time": 122
+    },
+    {
+        "pos": 27,
+        "out": "  -   19 e2e/tests/budget-overspend.spec.ts:220:7 \u203a Budget step validation for overspend campaign \u203a Use recommended budget, navigate back, return, and verify persistence\n",
+        "time": 122
+    },
+    {
+        "pos": 28,
+        "out": "  -   20 e2e/tests/budget-overspend.spec.ts:264:7 \u203a Budget step validation for overspend campaign \u203a Save draft with valid budget\n",
+        "time": 122
+    },
+    {
+        "pos": 29,
+        "out": "  \u2713   11 e2e/tests/add-anyall-to-interests-filters.spec.ts:91:7 \u203a Interests Any/All filter \u203a Verify audience panel shows interest selections (11.4s)\n",
+        "time": 127
+    },
+    {
+        "pos": 30,
+        "out": "  \u2713   13 e2e/tests/create-custom-field-fixture.spec.ts:10:7 \u203a createCustomField() API fixture \u203a Custom field created via API appears on the Custom Fields page (13.2s)\n",
+        "time": 135
+    },
+    {
+        "pos": 31,
+        "out": "  \u2718   21 e2e/tests/budget-overspend.spec.ts:29:7 \u203a Budget step validation for overspend campaign \u203a Navigate to campaign edit and reach Budget step (retry #1) (10.5s)\n",
+        "time": 136
+    },
+    {
+        "pos": 32,
+        "out": "  -   24 e2e/tests/budget-overspend.spec.ts:50:7 \u203a Budget step validation for overspend campaign \u203a Set dates and verify recommended budget appears (retry #1)\n",
+        "time": 136
+    },
+    {
+        "pos": 33,
+        "out": "  -   25 e2e/tests/budget-overspend.spec.ts:102:7 \u203a Budget step validation for overspend campaign \u203a Use recommended budget and verify Next is enabled (retry #1)\n",
+        "time": 136
+    },
+    {
+        "pos": 34,
+        "out": "  -   26 e2e/tests/budget-overspend.spec.ts:129:7 \u203a Budget step validation for overspend campaign \u203a Enter budget below minimum and verify Next is disabled (retry #1)\n",
+        "time": 136
+    },
+    {
+        "pos": 35,
+        "out": "  -   27 e2e/tests/budget-overspend.spec.ts:162:7 \u203a Budget step validation for overspend campaign \u203a Enter zero budget and verify validation error (retry #1)\n",
+        "time": 136
+    },
+    {
+        "pos": 36,
+        "out": "  -   28 e2e/tests/budget-overspend.spec.ts:191:7 \u203a Budget step validation for overspend campaign \u203a Enter a large valid budget and verify Next is enabled (retry #1)\n",
+        "time": 136
+    },
+    {
+        "pos": 37,
+        "out": "  -   29 e2e/tests/budget-overspend.spec.ts:220:7 \u203a Budget step validation for overspend campaign \u203a Use recommended budget, navigate back, return, and verify persistence (retry #1)\n",
+        "time": 136
+    },
+    {
+        "pos": 38,
+        "out": "  -   30 e2e/tests/budget-overspend.spec.ts:264:7 \u203a Budget step validation for overspend campaign \u203a Save draft with valid budget (retry #1)\n",
+        "time": 136
+    },
+    {
+        "pos": 39,
+        "out": "  \u2713   31 e2e/tests/donation-community-group.spec.ts:30:7 \u203a Donation community group \u203a Create donation form precondition (162ms)\n",
+        "time": 137
+    },
+    {
+        "pos": 40,
+        "out": "  \u2713   12 e2e/tests/add-mode-glue-between-predicates.spec.ts:96:7 \u203a Add mode glue between predicates \u203a Three filter sets show two glue operators (21.0s)\n",
+        "time": 138
+    },
+    {
+        "pos": 41,
+        "out": "  \u2713   23 e2e/tests/create-partner-fixture.spec.ts:10:7 \u203a createPartner() API fixture \u203a Partner created via API appears in the Partners list (9.8s)\n",
+        "time": 145
+    },
+    {
+        "pos": 42,
+        "out": "  -   34 e2e/tests/drip-campaign-creation.spec.ts:20:7 \u203a Drip campaign creation \u203a Create a Drip campaign and verify the wizard loads\n",
+        "time": 145
+    },
+    {
+        "pos": 43,
+        "out": "  -   35 e2e/tests/drip-campaign-creation.spec.ts:55:7 \u203a Drip campaign creation \u203a Navigate through the Drip campaign wizard steps\n",
+        "time": 145
+    },
+    {
+        "pos": 44,
+        "out": "  -   36 e2e/tests/drip-campaign-creation.spec.ts:114:7 \u203a Drip campaign creation \u203a Verify campaign is in Draft state\n",
+        "time": 145
+    },
+    {
+        "pos": 45,
+        "out": "  \u2713   22 e2e/tests/add-anyall-to-interests-filters.spec.ts:103:7 \u203a Interests Any/All filter \u203a Network request verifies datagroup structure for Any vs All mode (22.4s)\n",
+        "time": 149
+    },
+    {
+        "pos": 46,
+        "out": "  \u2713   33 e2e/tests/add-mode-glue-between-predicates.spec.ts:123:7 \u203a Add mode glue between predicates \u203a Rapid toggling between \"any\" and \"all\" updates reliably (22.2s)\n",
+        "time": 160
+    },
+    {
+        "pos": 47,
+        "out": "  \u2713   37 e2e/tests/end-date-extension-recommendation.spec.ts:41:7 \u203a End Date Extension Recommendation \u203a Open recommendation modal and verify content (17.1s)\n",
+        "time": 162
+    },
+    {
+        "pos": 48,
+        "out": "  \u2713   39 e2e/tests/flight-path-templates.spec.ts:19:7 \u203a Flight path templates \u203a View all new flight path templates (12.8s)\n",
+        "time": 173
+    },
+    {
+        "pos": 49,
+        "out": "  \u2713   38 e2e/tests/add-anyall-to-interests-filters.spec.ts:143:7 \u203a Interests Any/All filter \u203a Rapid switching between Any and All modes (25.5s)\n",
+        "time": 175
+    },
+    {
+        "pos": 50,
+        "out": "  \u2713   40 e2e/tests/end-date-extension-recommendation.spec.ts:104:7 \u203a End Date Extension Recommendation \u203a Dismiss recommendation (13.8s)\n",
+        "time": 176
+    },
+    {
+        "pos": 51,
+        "out": "  \u2713   32 e2e/tests/donation-community-group.spec.ts:37:7 \u203a Donation community group \u203a Build and save group filtered by specific donation form (38.4s)\n",
+        "time": 176
+    },
+    {
+        "pos": 52,
+        "out": "  \u2713   41 e2e/tests/flight-path-templates.spec.ts:39:7 \u203a Flight path templates \u203a Validate structure of Fundraising Flight Example (15.4s)\n",
+        "time": 188
+    },
+    {
+        "pos": 53,
+        "out": "  \u2713   43 e2e/tests/form-clone.spec.ts:17:7 \u203a Form clone \u203a Duplicate a published form and verify clone appears (32.4s)\n",
+        "time": 208
+    },
+    {
+        "pos": 54,
+        "out": "  \u2713   44 e2e/tests/form-creation-and-publish.spec.ts:17:7 \u203a Form creation and publish \u203a Create a form, publish it, and verify Published status in list (33.1s)\n",
+        "time": 209
+    },
+    {
+        "pos": 55,
+        "out": "  \u2713   45 e2e/tests/flight-path-templates.spec.ts:79:7 \u203a Flight path templates \u203a Create a flight using Event Flight Example template (22.5s)\n",
+        "time": 211
+    },
+    {
+        "pos": 56,
+        "out": "  \u2713   42 e2e/tests/add-anyall-to-interests-filters.spec.ts:204:7 \u203a Interests Any/All filter \u203a Remove interest while in Any mode (35.9s)\n",
+        "time": 211
+    },
+    {
+        "pos": 57,
+        "out": "  \u2713   48 e2e/tests/form-creation-submission.spec.ts:25:7 \u203a Form creation and submission \u203a Setup: create project via API (114ms)\n",
+        "time": 211
+    },
+    {
+        "pos": 58,
+        "out": "  \u2713   46 e2e/tests/form-clone.spec.ts:86:7 \u203a Form clone \u203a Publish the cloned form (16.6s)\n",
+        "time": 225
+    },
+    {
+        "pos": 59,
+        "out": "  \u2713   49 e2e/tests/form-deletion.spec.ts:14:7 \u203a Form deletion \u203a Delete a published form and verify it is removed (14.4s)\n",
+        "time": 225
+    },
+    {
+        "pos": 60,
+        "out": "  \u2713   52 e2e/tests/form-republish.spec.ts:21:7 \u203a Form republish process \u203a Setup: create project and published form (272ms)\n",
+        "time": 226
+    },
+    {
+        "pos": 61,
+        "out": "  \u2713   47 e2e/tests/form-creation-and-publish.spec.ts:95:7 \u203a Form creation and publish \u203a Republish the form (22.4s)\n",
+        "time": 232
+    },
+    {
+        "pos": 62,
+        "out": "  \u2713   51 e2e/tests/form-rename.spec.ts:14:7 \u203a Form rename \u203a Rename a published form and verify new name (15.3s)\n",
+        "time": 240
+    },
+    {
+        "pos": 63,
+        "out": "  \u2713   53 e2e/tests/form-republish.spec.ts:29:7 \u203a Form republish process \u203a Edit published form, add field, and republish (19.4s)\n",
+        "time": 245
+    },
+    {
+        "pos": 64,
+        "out": "  \u2713   50 e2e/tests/form-creation-submission.spec.ts:29:7 \u203a Form creation and submission \u203a Create form with multiple fields and publish (34.6s)\n",
+        "time": 245
+    },
+    {
+        "pos": 65,
+        "out": "  \u2713   54 e2e/tests/historical-geofencing.spec.ts:23:7 \u203a Historical Geofencing campaign creation \u203a Create a Historical Geofencing campaign and verify edit page loads (17.0s)\n",
+        "time": 249
+    },
+    {
+        "pos": 66,
+        "out": "  \u2713   56 e2e/tests/form-republish.spec.ts:63:7 \u203a Form republish process \u203a Share modal opens and displays expected state (16.0s)\n",
+        "time": 261
+    },
+    {
+        "pos": 67,
+        "out": "  \u2713   57 e2e/tests/form-creation-submission.spec.ts:100:7 \u203a Form creation and submission \u203a Submit form and verify in Community (17.9s)\n",
+        "time": 263
+    },
+    {
+        "pos": 68,
+        "out": "  \u2713   55 e2e/tests/import-contacts-fixture.spec.ts:10:7 \u203a importContacts() API fixture \u203a Batch-created contacts appear on the People page (23.9s)\n",
+        "time": 264
+    },
+    {
+        "pos": 69,
+        "out": "  \u2713   58 e2e/tests/invites-creation.spec.ts:13:7 \u203a Invites campaign creation \u203a Create an Invites campaign and verify edit page loads (20.8s)\n",
+        "time": 270
+    },
+    {
+        "pos": 70,
+        "out": "  \u2713   62 e2e/tests/person-archive-restore.spec.ts:78:7 \u203a Person archive and restore \u203a Create two people via API (2.1s)\n",
+        "time": 272
+    },
+    {
+        "pos": 71,
+        "out": "  \u2713   60 e2e/tests/partner-edit-responsive.spec.ts:22:7 \u203a Edit Partner content is responsive \u203a Edit Partner page displays all fields at desktop width (1280px) (12.8s)\n",
+        "time": 277
+    },
+    {
+        "pos": 72,
+        "out": "  \u2713   61 e2e/tests/partner-page-validation.spec.ts:16:7 \u203a Partner page validation \u203a Create a partner and verify it in the list (15.0s)\n",
+        "time": 279
+    },
+    {
+        "pos": 73,
+        "out": "  \u2713   59 e2e/tests/landing-page-creation.spec.ts:13:7 \u203a Landing Page campaign creation \u203a Create a Landing Page campaign and verify edit page loads (20.0s)\n",
+        "time": 281
+    },
+    {
+        "pos": 74,
+        "out": "  \u2713   66 e2e/tests/person-deletion-archive-job.spec.ts:75:7 \u203a Person deletion/archive job \u203a Create three people via API (3.1s)\n",
+        "time": 284
+    },
+    {
+        "pos": 75,
+        "out": "  \u2713   64 e2e/tests/partner-edit-responsive.spec.ts:63:7 \u203a Edit Partner content is responsive \u203a Edit Partner page is responsive at tablet width (768px) (13.6s)\n",
+        "time": 290
+    },
+    {
+        "pos": 76,
+        "out": "  \u2713   65 e2e/tests/partner-page-validation.spec.ts:77:7 \u203a Partner page validation \u203a Search for a partner (12.0s)\n",
+        "time": 291
+    },
+    {
+        "pos": 77,
+        "out": "  \u2713   67 e2e/tests/person-deletion-archive-job.spec.ts:83:7 \u203a Person deletion/archive job \u203a Verify all three people appear in Active tab (14.6s)\n",
+        "time": 299
+    },
+    {
+        "pos": 78,
+        "out": "  \u2713   68 e2e/tests/partner-edit-responsive.spec.ts:104:7 \u203a Edit Partner content is responsive \u203a Edit Partner page is responsive at mobile width (375px) (14.4s)\n",
+        "time": 305
+    },
+    {
+        "pos": 79,
+        "out": "  \u2713   69 e2e/tests/partner-page-validation.spec.ts:108:7 \u203a Partner page validation \u203a Edit a partner's name (18.5s)\n",
+        "time": 310
+    },
+    {
+        "pos": 80,
+        "out": "  \u2713   72 e2e/tests/predicate-edit-retention.spec.ts:25:7 \u203a Predicate edit retention \u203a Create three people with known attributes (2.6s)\n",
+        "time": 312
+    },
+    {
+        "pos": 81,
+        "out": "  \u2713   63 e2e/tests/person-archive-restore.spec.ts:85:7 \u203a Person archive and restore \u203a Archive a single person (44.1s)\n",
+        "time": 316
+    },
+    {
+        "pos": 82,
+        "out": "  \u2713   71 e2e/tests/pixl-plus-demographics.spec.ts:33:7 \u203a Pixl Plus demographics and interests \u203a Verify Age Demographics and Interests cards are visible (17.8s)\n",
+        "time": 323
+    },
+    {
+        "pos": 83,
+        "out": "  \u2713   70 e2e/tests/person-deletion-archive-job.spec.ts:99:7 \u203a Person deletion/archive job \u203a Archive multiple people and verify they move to Archived (37.7s)\n",
+        "time": 337
+    },
+    {
+        "pos": 84,
+        "out": "  \u2713   75 e2e/tests/pixl-plus-demographics.spec.ts:58:7 \u203a Pixl Plus demographics and interests \u203a Select and uncheck age demographics (15.6s)\n",
+        "time": 339
+    },
+    {
+        "pos": 85,
+        "out": "  \u2713   73 e2e/tests/predicate-edit-retention.spec.ts:35:7 \u203a Predicate edit retention \u203a Edit first filter value \u2014 second filter unchanged (33.3s)\n",
+        "time": 346
+    },
+    {
+        "pos": 86,
+        "out": "  \u2713   77 e2e/tests/pixl-plus-demographics.spec.ts:92:7 \u203a Pixl Plus demographics and interests \u203a Select and uncheck interests (13.1s)\n",
+        "time": 352
+    },
+    {
+        "pos": 87,
+        "out": "  \u2713   76 e2e/tests/person-deletion-archive-job.spec.ts:138:7 \u203a Person deletion/archive job \u203a Archived people do not appear in the Active tab (18.4s)\n",
+        "time": 355
+    },
+    {
+        "pos": 88,
+        "out": "  \u2713   79 e2e/tests/pixl-plus-demographics.spec.ts:128:7 \u203a Pixl Plus demographics and interests \u203a Search for interests and verify results (12.8s)\n",
+        "time": 365
+    },
+    {
+        "pos": 89,
+        "out": "  \u2713   74 e2e/tests/person-archive-restore.spec.ts:123:7 \u203a Person archive and restore \u203a Restore a single person (48.2s)\n",
+        "time": 365
+    },
+    {
+        "pos": 90,
+        "out": "  \u2713   78 e2e/tests/predicate-edit-retention.spec.ts:59:7 \u203a Predicate edit retention \u203a Edit first filter field \u2014 second filter unchanged (26.1s)\n",
+        "time": 372
+    },
+    {
+        "pos": 91,
+        "out": "  \u2713   80 e2e/tests/predicate-system.spec.ts:48:7 \u203a Predicate system \u203a Text \"is\" filter returns exact match only (29.2s)\n",
+        "time": 387
+    },
+    {
+        "pos": 92,
+        "out": "  \u2713   81 e2e/tests/pixl-plus-demographics.spec.ts:160:7 \u203a Pixl Plus demographics and interests \u203a Save filters as draft and verify persistence after reload (35.1s)\n",
+        "time": 400
+    },
+    {
+        "pos": 93,
+        "out": "  \u2713   85 e2e/tests/predicates-v2.spec.ts:31:7 \u203a Predicates v2 \u2014 Group screen \u203a Create a group via API (239ms)\n",
+        "time": 400
+    },
+    {
+        "pos": 94,
+        "out": "  \u2713   83 e2e/tests/predicate-edit-retention.spec.ts:83:7 \u203a Predicate edit retention \u203a Edit first filter operator \u2014 second filter unchanged (35.1s)\n",
+        "time": 407
+    },
+    {
+        "pos": 95,
+        "out": "  \u2713   82 e2e/tests/person-archive-restore.spec.ts:158:7 \u203a Person archive and restore \u203a Archive multiple people at once (48.8s)\n",
+        "time": 414
+    },
+    {
+        "pos": 96,
+        "out": "  \u2713   86 e2e/tests/predicates-v2.spec.ts:39:7 \u203a Predicates v2 \u2014 Group screen \u203a Add predicate and convert to group predicate via add-rule (16.4s)\n",
+        "time": 416
+    },
+    {
+        "pos": 97,
+        "out": "  \u2713   84 e2e/tests/predicate-system.spec.ts:70:7 \u203a Predicate system \u203a Text \"exists\" hides value input and \"does not exist\" gives complement (35.0s)\n",
+        "time": 422
+    },
+    {
+        "pos": 98,
+        "out": "  \u2713   89 e2e/tests/predicates-v2.spec.ts:60:7 \u203a Predicates v2 \u2014 Group screen \u203a Delete a filter set removes all its rules (25.1s)\n",
+        "time": 441
+    },
+    {
+        "pos": 99,
+        "out": "  \u2713   90 e2e/tests/predicate-system.spec.ts:111:7 \u203a Predicate system \u203a Text \"contains\" filter on Primary email matches substring (23.2s)\n",
+        "time": 445
+    },
+    {
+        "pos": 100,
+        "out": "  \u2713   87 e2e/tests/predicate-edit-retention.spec.ts:105:7 \u203a Predicate edit retention \u203a Three filters \u2014 editing first retains second and third (40.3s)\n",
+        "time": 447
+    },
+    {
+        "pos": 101,
+        "out": "  \u2713   91 e2e/tests/predicates-v2.spec.ts:88:7 \u203a Predicates v2 \u2014 Group screen \u203a Delete individual rule keeps sibling rule intact (24.3s)\n",
+        "time": 466
+    },
+    {
+        "pos": 102,
+        "out": "  \u2713   88 e2e/tests/person-archive-restore.spec.ts:199:7 \u203a Person archive and restore \u203a Restore multiple people at once (54.2s)\n",
+        "time": 468
+    },
+    {
+        "pos": 103,
+        "out": "  \u2713   92 e2e/tests/predicate-system.spec.ts:127:7 \u203a Predicate system \u203a Date \"is after\" with \"today\" sub-mode returns 0 (no future dates) (22.7s)\n",
+        "time": 468
+    },
+    {
+        "pos": 104,
+        "out": "  \u2713   93 e2e/tests/project-creation.spec.ts:12:7 \u203a Project creation \u203a Create a project via UI and verify it appears in the list (23.1s)\n",
+        "time": 470
+    },
+    {
+        "pos": 105,
+        "out": "  \u2713   94 e2e/tests/predicates-v2.spec.ts:115:7 \u203a Predicates v2 \u2014 Group screen \u203a Date/Time field operators correct on Group screen (15.2s)\n",
+        "time": 481
+    },
+    {
+        "pos": 106,
+        "out": "  \u2713   95 e2e/tests/retargeting-creation-consistent.spec.ts:22:7 \u203a Retargeting campaign creation \u203a Create a Retargeting campaign and verify edit page loads (19.7s)\n",
+        "time": 488
+    },
+    {
+        "pos": 107,
+        "out": "  \u2713   99 e2e/tests/single-send-creation-and-publish.spec.ts:25:7 \u203a Single Send email delivery \u203a Create person and group via API (940ms)\n",
+        "time": 489
+    },
+    {
+        "pos": 108,
+        "out": "  \u2713   96 e2e/tests/predicate-system.spec.ts:146:7 \u203a Predicate system \u203a Date \"is after\" with \"relative date\" includes recently created people (21.4s)\n",
+        "time": 489
+    },
+    {
+        "pos": 109,
+        "out": "  \u2713   98 e2e/tests/predicates-v2.spec.ts:132:7 \u203a Predicates v2 \u2014 Group screen \u203a Boolean field operators correct on Group screen (14.7s)\n",
+        "time": 496
+    },
+    {
+        "pos": 110,
+        "out": "  \u2713   97 e2e/tests/segmented-control-any-all.spec.ts:55:7 \u203a Segmented control any/all \u203a Segmented control is visible on the predicate builder (25.3s)\n",
+        "time": 499
+    },
+    {
+        "pos": 111,
+        "out": "  \u2713  101 e2e/tests/predicate-system.spec.ts:174:7 \u203a Predicate system \u203a Date \"is before\" with \"exact date\" excludes recent people (16.7s)\n",
+        "time": 506
+    },
+    {
+        "pos": 112,
+        "out": "  \u2713  102 e2e/tests/predicates-v2.spec.ts:164:7 \u203a Predicates v2 \u2014 Group screen \u203a List field operators correct on Group screen (12.7s)\n",
+        "time": 508
+    },
+    {
+        "pos": 113,
+        "out": "  \u2713  104 e2e/tests/predicate-system.spec.ts:196:7 \u203a Predicate system \u203a List field \"Tags\" has correct operators (no string operators) (14.8s)\n",
+        "time": 521
+    },
+    {
+        "pos": 114,
+        "out": "  \u2713  105 e2e/tests/predicates-v2.spec.ts:182:7 \u203a Predicates v2 \u2014 Group screen \u203a Number field operators correct on Group screen (16.5s)\n",
+        "time": 525
+    },
+    {
+        "pos": 115,
+        "out": "  \u2713  100 e2e/tests/single-send-creation-and-publish.spec.ts:40:7 \u203a Single Send email delivery \u203a Create Single Send campaign and select template (36.8s)\n",
+        "time": 525
+    },
+    {
+        "pos": 116,
+        "out": "  \u2713  103 e2e/tests/segmented-control-any-all.spec.ts:76:7 \u203a Segmented control any/all \u203a Switching from any to all mode reduces matched count (37.7s)\n",
+        "time": 537
+    },
+    {
+        "pos": 117,
+        "out": "  \u2713  106 e2e/tests/predicate-system.spec.ts:219:7 \u203a Predicate system \u203a Boolean field has \"is\" / \"is not\" operators with True/False values (25.4s)\n",
+        "time": 546
+    },
+    {
+        "pos": 118,
+        "out": "  -  107 e2e/tests/successful-login-with-valid-otp.spec.ts:8:7 \u203a Successful login with valid OTP \u203a full OTP login flow with invalid code, resend, and successful verification\n",
+        "time": 547
+    },
+    {
+        "pos": 119,
+        "out": "  \u2713  108 e2e/tests/single-send-creation-and-publish.spec.ts:109:7 \u203a Single Send email delivery \u203a Configure details: from address and subject with merge tags (36.5s)\n",
+        "time": 562
+    },
+    {
+        "pos": 120,
+        "out": "  \u2713  111 e2e/tests/wizard-objective-select.spec.ts:63:7 \u203a Wizard objective select \u203a Objective step appears for Retargeting campaign (15.9s)\n",
+        "time": 563
+    },
+    {
+        "pos": 121,
+        "out": "  \u2713  110 e2e/tests/predicate-system.spec.ts:255:7 \u203a Predicate system \u203a Number field has numeric comparison operators (19.1s)\n",
+        "time": 565
+    },
+    {
+        "pos": 122,
+        "out": "  \u2713  109 e2e/tests/segmented-control-any-all.spec.ts:108:7 \u203a Segmented control any/all \u203a Switching back from all to any restores original count (35.9s)\n",
+        "time": 573
+    },
+    {
+        "pos": 123,
+        "out": "  \u2713  113 e2e/tests/wizard-objective-select.spec.ts:75:7 \u203a Wizard objective select \u203a Objective step appears for Affinity campaign (13.4s)\n",
+        "time": 576
+    },
+    {
+        "pos": 124,
+        "out": "  \u2713  114 e2e/tests/predicate-system.spec.ts:280:7 \u203a Predicate system \u203a Excludes inverts the filter result (19.8s)\n",
+        "time": 585
+    },
+    {
+        "pos": 125,
+        "out": "  \u2713  116 e2e/tests/wizard-objective-select.spec.ts:109:7 \u203a Wizard objective select \u203a Cannot proceed without selecting an objective (10.0s)\n",
+        "time": 586
+    },
+    {
+        "pos": 126,
+        "out": "  \u2713  115 e2e/tests/segmented-control-any-all.spec.ts:131:7 \u203a Segmented control any/all \u203a Mode persists after adding a third filter (30.4s)\n",
+        "time": 603
+    },
+    {
+        "pos": 127,
+        "out": "  \u2713  118 e2e/tests/wizard-objective-select.spec.ts:123:7 \u203a Wizard objective select \u203a Select \"Deepen Engagement\" objective and create campaign (17.5s)\n",
+        "time": 604
+    },
+    {
+        "pos": 128,
+        "out": "  \u2713  117 e2e/tests/predicate-system.spec.ts:303:7 \u203a Predicate system \u203a Switching group mode \"any\" to \"all\" reduces count (24.3s)\n",
+        "time": 609
+    },
+    {
+        "pos": 129,
+        "out": "  \u2713  120 e2e/tests/wizard-objective-select.spec.ts:156:7 \u203a Wizard objective select \u203a Select \"Drive Conversions\" objective and create campaign (16.6s)\n",
+        "time": 620
+    },
+    {
+        "pos": 130,
+        "out": "  \u2713  121 e2e/tests/predicate-system.spec.ts:329:7 \u203a Predicate system \u203a Add rule within filter set creates same-kind constraint (13.3s)\n",
+        "time": 623
+    },
+    {
+        "pos": 131,
+        "out": "  \u2713  122 e2e/tests/wizard-objective-select.spec.ts:189:7 \u203a Wizard objective select \u203a Select \"Custom Objective\" and create campaign (15.7s)\n",
+        "time": 636
+    },
+    {
+        "pos": 132,
+        "out": "  \u2713  124 e2e/tests/e2e-campaign-creation-mobile-geofencing.spec.ts:67:7 \u203a Mobile Geofencing campaign creation \u203a Create project via API (172ms)\n",
+        "time": 638
+    },
+    {
+        "pos": 133,
+        "out": "  \u2713  123 e2e/tests/predicate-system.spec.ts:346:7 \u203a Predicate system \u203a Deleting an individual rule keeps sibling rules intact (23.0s)\n",
+        "time": 646
+    },
+    {
+        "pos": 134,
+        "out": "  \u2713  119 e2e/tests/segmented-control-any-all.spec.ts:158:7 \u203a Segmented control any/all \u203a Rapid toggling between any and all settles correctly (45.5s)\n",
+        "time": 649
+    },
+    {
+        "pos": 135,
+        "out": "  \u2713  126 e2e/tests/predicate-system.spec.ts:382:7 \u203a Predicate system \u203a Mixed types impossible within a single filter set (19.3s)\n",
+        "time": 665
+    },
+    {
+        "pos": 136,
+        "out": "  \u2713  112 e2e/tests/single-send-creation-and-publish.spec.ts:186:7 \u203a Single Send email delivery \u203a Set audience, publish, and verify email delivery (1.8m)\n",
+        "time": 668
+    },
+    {
+        "pos": 137,
+        "out": "  \u2713  125 e2e/tests/e2e-campaign-creation-mobile-geofencing.spec.ts:71:7 \u203a Mobile Geofencing campaign creation \u203a Create Mobile Geofencing campaign via dialog (33.4s)\n",
+        "time": 671
+    },
+    {
+        "pos": 138,
+        "out": "  \u2713  128 e2e/tests/single-send-creation-and-publish.spec.ts:293:7 \u203a Single Send email delivery \u203a Verify Single Send report page (13.0s)\n",
+        "time": 681
+    },
+    {
+        "pos": 139,
+        "out": "  \u2713  127 e2e/tests/predicate-system.spec.ts:405:7 \u203a Predicate system \u203a Deleting a filter reverts count to original (22.3s)\n",
+        "time": 688
+    },
+    {
+        "pos": 140,
+        "out": "  \u2713  130 e2e/tests/predicate-system.spec.ts:431:7 \u203a Predicate system \u203a Editing first filter retains second filter values (21.5s)\n",
+        "time": 709
+    },
+    {
+        "pos": 141,
+        "out": "  \u2713  129 e2e/tests/e2e-campaign-creation-mobile-geofencing.spec.ts:118:7 \u203a Mobile Geofencing campaign creation \u203a Add geofence targets and creative (54.5s)\n",
+        "time": 726
+    },
+    {
+        "pos": 142,
+        "out": "  \u2713  131 e2e/tests/predicate-system.spec.ts:457:7 \u203a Predicate system \u203a Save filters as group and verify in Community > Groups (27.7s)\n",
+        "time": 737
+    },
+    {
+        "pos": 143,
+        "out": "  \u2713  132 e2e/tests/e2e-campaign-creation-mobile-geofencing.spec.ts:225:7 \u203a Mobile Geofencing campaign creation \u203a Configure optimization and budget (38.5s)\n",
+        "time": 764
+    },
+    {
+        "pos": 144,
+        "out": "  \u2713  133 e2e/tests/e2e-campaign-creation-mobile-geofencing.spec.ts:325:7 \u203a Mobile Geofencing campaign creation \u203a Skip goals, review, and publish (35.5s)\n",
+        "time": 800
+    },
+    {
+        "pos": 145,
+        "out": "[global-teardown] Done.\n",
+        "time": 800
+    },
+    {
+        "pos": 146,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 147,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 148,
+        "out": "  1) e2e/tests/budget-overspend.spec.ts:29:7 \u203a Budget step validation for overspend campaign \u203a Navigate to campaign edit and reach Budget step \u203a Verify Duration card is visible \n",
+        "time": 800
+    },
+    {
+        "pos": 149,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 150,
+        "out": "    Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n",
+        "time": 800
+    },
+    {
+        "pos": 151,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 152,
+        "out": "    Locator: getByText('Duration')\n",
+        "time": 800
+    },
+    {
+        "pos": 153,
+        "out": "    Expected: visible\n",
+        "time": 800
+    },
+    {
+        "pos": 154,
+        "out": "    Error: strict mode violation: getByText('Duration') resolved to 2 elements:\n",
+        "time": 800
+    },
+    {
+        "pos": 155,
+        "out": "        1) <h3 class=\"Svtvq5q6nLxwNDTW0u1J\">Duration</h3> aka getByRole('heading', { name: 'Duration' })\n",
+        "time": 800
+    },
+    {
+        "pos": 156,
+        "out": "        2) <div class=\"e7FAX_OnAuZHnfY2cu7y\">Example will suggest a budget based on the duratio\u2026</div> aka getByText('Example will suggest a budget')\n",
+        "time": 800
+    },
+    {
+        "pos": 157,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 158,
+        "out": "    Call log:\n",
+        "time": 800
+    },
+    {
+        "pos": 159,
+        "out": "    \u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n",
+        "time": 800
+    },
+    {
+        "pos": 160,
+        "out": "    \u001b[2m  - waiting for getByText('Duration')\u001b[22m\n",
+        "time": 800
+    },
+    {
+        "pos": 161,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 162,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 163,
+        "out": "      40 |\n",
+        "time": 800
+    },
+    {
+        "pos": 164,
+        "out": "      41 |     await step(page, 'Verify Duration card is visible', async () => {\n",
+        "time": 800
+    },
+    {
+        "pos": 165,
+        "out": "    > 42 |       await expect(page.getByText('Duration')).toBeVisible();\n",
+        "time": 800
+    },
+    {
+        "pos": 166,
+        "out": "         |                                                ^\n",
+        "time": 800
+    },
+    {
+        "pos": 167,
+        "out": "      43 |     });\n",
+        "time": 800
+    },
+    {
+        "pos": 168,
+        "out": "      44 |\n",
+        "time": 800
+    },
+    {
+        "pos": 169,
+        "out": "      45 |     await step(page, 'Verify Budget card is visible', async () => {\n",
+        "time": 800
+    },
+    {
+        "pos": 170,
+        "out": "        at fn (/drone/src/e2e/tests/budget-overspend.spec.ts:42:48)\n",
+        "time": 800
+    },
+    {
+        "pos": 171,
+        "out": "        at /drone/src/e2e/fixture.ts:9:11\n",
+        "time": 800
+    },
+    {
+        "pos": 172,
+        "out": "        at step (/drone/src/e2e/fixture.ts:8:14)\n",
+        "time": 800
+    },
+    {
+        "pos": 173,
+        "out": "        at /drone/src/e2e/tests/budget-overspend.spec.ts:41:15\n",
+        "time": 800
+    },
+    {
+        "pos": 174,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 175,
+        "out": "    attachment #3: screenshot (image/png) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 176,
+        "out": "    test-results/tests-budget-overspend-Bud-64a46--edit-and-reach-Budget-step/test-failed-1.png\n",
+        "time": 800
+    },
+    {
+        "pos": 177,
+        "out": "    \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 178,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 179,
+        "out": "    attachment #4: video (video/webm) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 180,
+        "out": "    test-results/tests-budget-overspend-Bud-64a46--edit-and-reach-Budget-step/video.webm\n",
+        "time": 800
+    },
+    {
+        "pos": 181,
+        "out": "    \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 182,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 183,
+        "out": "    Error Context: test-results/tests-budget-overspend-Bud-64a46--edit-and-reach-Budget-step/error-context.md\n",
+        "time": 800
+    },
+    {
+        "pos": 184,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 185,
+        "out": "    attachment #6: trace (application/zip) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 186,
+        "out": "    test-results/tests-budget-overspend-Bud-64a46--edit-and-reach-Budget-step/trace.zip\n",
+        "time": 800
+    },
+    {
+        "pos": 187,
+        "out": "    Usage:\n",
+        "time": 800
+    },
+    {
+        "pos": 188,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 189,
+        "out": "        npx playwright show-trace test-results/tests-budget-overspend-Bud-64a46--edit-and-reach-Budget-step/trace.zip\n",
+        "time": 800
+    },
+    {
+        "pos": 190,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 191,
+        "out": "    \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 192,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 193,
+        "out": "    Retry #1 \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 194,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 195,
+        "out": "    Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n",
+        "time": 800
+    },
+    {
+        "pos": 196,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 197,
+        "out": "    Locator: getByText('Duration')\n",
+        "time": 800
+    },
+    {
+        "pos": 198,
+        "out": "    Expected: visible\n",
+        "time": 800
+    },
+    {
+        "pos": 199,
+        "out": "    Error: strict mode violation: getByText('Duration') resolved to 2 elements:\n",
+        "time": 800
+    },
+    {
+        "pos": 200,
+        "out": "        1) <h3 class=\"Svtvq5q6nLxwNDTW0u1J\">Duration</h3> aka getByRole('heading', { name: 'Duration' })\n",
+        "time": 800
+    },
+    {
+        "pos": 201,
+        "out": "        2) <div class=\"e7FAX_OnAuZHnfY2cu7y\">Example will suggest a budget based on the duratio\u2026</div> aka getByText('Example will suggest a budget')\n",
+        "time": 800
+    },
+    {
+        "pos": 202,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 203,
+        "out": "    Call log:\n",
+        "time": 800
+    },
+    {
+        "pos": 204,
+        "out": "    \u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n",
+        "time": 800
+    },
+    {
+        "pos": 205,
+        "out": "    \u001b[2m  - waiting for getByText('Duration')\u001b[22m\n",
+        "time": 800
+    },
+    {
+        "pos": 206,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 207,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 208,
+        "out": "      40 |\n",
+        "time": 800
+    },
+    {
+        "pos": 209,
+        "out": "      41 |     await step(page, 'Verify Duration card is visible', async () => {\n",
+        "time": 800
+    },
+    {
+        "pos": 210,
+        "out": "    > 42 |       await expect(page.getByText('Duration')).toBeVisible();\n",
+        "time": 800
+    },
+    {
+        "pos": 211,
+        "out": "         |                                                ^\n",
+        "time": 800
+    },
+    {
+        "pos": 212,
+        "out": "      43 |     });\n",
+        "time": 800
+    },
+    {
+        "pos": 213,
+        "out": "      44 |\n",
+        "time": 800
+    },
+    {
+        "pos": 214,
+        "out": "      45 |     await step(page, 'Verify Budget card is visible', async () => {\n",
+        "time": 800
+    },
+    {
+        "pos": 215,
+        "out": "        at fn (/drone/src/e2e/tests/budget-overspend.spec.ts:42:48)\n",
+        "time": 800
+    },
+    {
+        "pos": 216,
+        "out": "        at /drone/src/e2e/fixture.ts:9:11\n",
+        "time": 800
+    },
+    {
+        "pos": 217,
+        "out": "        at step (/drone/src/e2e/fixture.ts:8:14)\n",
+        "time": 800
+    },
+    {
+        "pos": 218,
+        "out": "        at /drone/src/e2e/tests/budget-overspend.spec.ts:41:15\n",
+        "time": 800
+    },
+    {
+        "pos": 219,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 220,
+        "out": "    attachment #3: screenshot (image/png) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 221,
+        "out": "    test-results/tests-budget-overspend-Bud-64a46--edit-and-reach-Budget-step-retry1/test-failed-1.png\n",
+        "time": 800
+    },
+    {
+        "pos": 222,
+        "out": "    \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 223,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 224,
+        "out": "    attachment #4: video (video/webm) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 225,
+        "out": "    test-results/tests-budget-overspend-Bud-64a46--edit-and-reach-Budget-step-retry1/video.webm\n",
+        "time": 800
+    },
+    {
+        "pos": 226,
+        "out": "    \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 227,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 228,
+        "out": "    Error Context: test-results/tests-budget-overspend-Bud-64a46--edit-and-reach-Budget-step-retry1/error-context.md\n",
+        "time": 800
+    },
+    {
+        "pos": 229,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 230,
+        "out": "    attachment #6: trace (application/zip) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 231,
+        "out": "    test-results/tests-budget-overspend-Bud-64a46--edit-and-reach-Budget-step-retry1/trace.zip\n",
+        "time": 800
+    },
+    {
+        "pos": 232,
+        "out": "    Usage:\n",
+        "time": 800
+    },
+    {
+        "pos": 233,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 234,
+        "out": "        npx playwright show-trace test-results/tests-budget-overspend-Bud-64a46--edit-and-reach-Budget-step-retry1/trace.zip\n",
+        "time": 800
+    },
+    {
+        "pos": 235,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 236,
+        "out": "    \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n",
+        "time": 800
+    },
+    {
+        "pos": 237,
+        "out": "\n",
+        "time": 800
+    },
+    {
+        "pos": 238,
+        "out": "  Slow test file: e2e/tests/predicate-system.spec.ts (6.3m)\n",
+        "time": 800
+    },
+    {
+        "pos": 239,
+        "out": "  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel\n",
+        "time": 800
+    },
+    {
+        "pos": 240,
+        "out": "  1 failed\n",
+        "time": 800
+    },
+    {
+        "pos": 241,
+        "out": "    e2e/tests/budget-overspend.spec.ts:29:7 \u203a Budget step validation for overspend campaign \u203a Navigate to campaign edit and reach Budget step \n",
+        "time": 800
+    },
+    {
+        "pos": 242,
+        "out": "  4 skipped\n",
+        "time": 800
+    },
+    {
+        "pos": 243,
+        "out": "  7 did not run\n",
+        "time": 800
+    },
+    {
+        "pos": 244,
+        "out": "  113 passed (13.3m)\n",
+        "time": 800
+    },
+    {
+        "pos": 245,
+        "out": "[MR] generating report data ...\n",
+        "time": 800
+    },
+    {
+        "pos": 246,
+        "out": "[MR] generating test report ...\n",
+        "time": 804
+    },
+    {
+        "pos": 247,
+        "out": "[MR] Example E2E Report\n",
+        "time": 808
+    },
+    {
+        "pos": 248,
+        "out": "\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n",
+        "time": 808
+    },
+    {
+        "pos": 249,
+        "out": "\u2502 Tests       \u2502 125                  \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 250,
+        "out": "\u2502 \u251c Failed    \u2502 1   (0.8%)           \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 251,
+        "out": "\u2502 \u251c Flaky     \u2502 0   (0.0%)           \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 252,
+        "out": "\u2502 \u251c Skipped   \u2502 11  (8.8%)           \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 253,
+        "out": "\u2502 \u2514 Passed    \u2502 113 (90.4%)          \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 254,
+        "out": "\u2502 Steps       \u2502 6300                 \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 255,
+        "out": "\u2502 Suites      \u2502 36                   \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 256,
+        "out": "\u2502 \u251c Projects  \u2502 1                    \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 257,
+        "out": "\u2502 \u251c Files     \u2502 36                   \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 258,
+        "out": "\u2502 \u251c Describes \u2502 36                   \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 259,
+        "out": "\u2502 \u2514 Shards    \u2502 0                    \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 260,
+        "out": "\u2502 Errors      \u2502 7                    \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 261,
+        "out": "\u2502 Retries     \u2502 8                    \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 262,
+        "out": "\u2502 Logs        \u2502 0                    \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 263,
+        "out": "\u2502 Attachments \u2502 795                  \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 264,
+        "out": "\u2502 Artifacts   \u2502 0                    \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 265,
+        "out": "\u2502 Playwright  \u2502 v1.58.2              \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 266,
+        "out": "\u2502 Date        \u2502 4/9/2026, 6:44:15 PM \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 267,
+        "out": "\u2502 Duration    \u2502 13m 20s              \u2502\n",
+        "time": 808
+    },
+    {
+        "pos": 268,
+        "out": "\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n",
+        "time": 808
+    },
+    {
+        "pos": 269,
+        "out": "[MR] json: monocart-report/index.json\n",
+        "time": 808
+    },
+    {
+        "pos": 270,
+        "out": "[MR] view report: npx monocart show-report monocart-report/index.html\n",
+        "time": 808
+    },
+    {
+        "pos": 271,
+        "out": "",
+        "time": 811
+    }
+]

@@ -1,0 +1,55 @@
+{
+  "name": "drone-mcp",
+  "version": "0.1.0",
+  "description": "Model Context Protocol server for Drone CI — read pipeline status, fetch failed-step logs, restart builds, and more from your AI assistant.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "drone-ci",
+    "drone",
+    "ci",
+    "claude",
+    "claude-code"
+  ],
+  "homepage": "https://github.com/dvd-rsnw/drone-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvd-rsnw/drone-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dvd-rsnw/drone-mcp/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "drone-mcp": "dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0",
+    "zod-to-json-schema": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "msw": "^2.13.2",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

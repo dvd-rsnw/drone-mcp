@@ -1,0 +1,204 @@
+{
+    "id": 53180,
+    "repo_id": 1777,
+    "trigger": "octocat",
+    "number": 225,
+    "parent": 224,
+    "status": "failure",
+    "event": "pull_request",
+    "action": "synchronized",
+    "link": "https://github.com/octocat/example-repo/pull/144",
+    "timestamp": 0,
+    "title": "test: add budget overspend validation E2E test (#47)",
+    "message": "## Summary\nAdds E2E test for budget step validation when campaign budget exceeds account balance.\n\n## Test Coverage\n- Creates campaign with budget exceeding available balance\n- Verifies overspend warning alert appears\n- Validates warning message content\n\n## Related Issue\nCloses #47\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)",
+    "before": "dddd4444dddd4444dddd4444dddd4444dddd4444",
+    "after": "bbbb2222bbbb2222bbbb2222bbbb2222bbbb2222",
+    "ref": "refs/pull/144/head",
+    "source_repo": "octocat/example-repo",
+    "source": "feature-branch",
+    "target": "dev",
+    "author_login": "bob",
+    "author_name": "",
+    "author_email": "",
+    "author_avatar": "https://avatars.githubusercontent.com/u/2?v=4",
+    "sender": "octocat",
+    "started": 1775760229,
+    "finished": 1775761067,
+    "created": 1775760228,
+    "updated": 1775760229,
+    "version": 3,
+    "stages": [
+        {
+            "id": 59864,
+            "repo_id": 1777,
+            "build_id": 53180,
+            "number": 1,
+            "name": "pull_request",
+            "kind": "pipeline",
+            "type": "kubernetes",
+            "status": "failure",
+            "errignore": false,
+            "exit_code": 0,
+            "machine": "drone-runner-kube-85f75f8c75-5tsdp",
+            "os": "linux",
+            "arch": "amd64",
+            "started": 1775760229,
+            "stopped": 1775761067,
+            "created": 1775760228,
+            "updated": 1775761067,
+            "version": 4,
+            "on_success": true,
+            "on_failure": false,
+            "steps": [
+                {
+                    "id": 667971,
+                    "step_id": 59864,
+                    "number": 1,
+                    "name": "clone",
+                    "status": "success",
+                    "exit_code": 0,
+                    "started": 1775760230,
+                    "stopped": 1775760237,
+                    "version": 4,
+                    "image": "drone/git:latest"
+                },
+                {
+                    "id": 667972,
+                    "step_id": 59864,
+                    "number": 2,
+                    "name": "restore_cache",
+                    "status": "success",
+                    "exit_code": 0,
+                    "started": 1775760237,
+                    "stopped": 1775760242,
+                    "version": 4,
+                    "depends_on": [
+                        "clone"
+                    ],
+                    "image": "docker.io/plugins/s3-cache:latest"
+                },
+                {
+                    "id": 667973,
+                    "step_id": 59864,
+                    "number": 3,
+                    "name": "fetch_secrets",
+                    "status": "success",
+                    "exit_code": 0,
+                    "started": 1775760242,
+                    "stopped": 1775760252,
+                    "version": 4,
+                    "depends_on": [
+                        "restore_cache"
+                    ],
+                    "image": "docker.io/amazon/aws-cli:2.27.33"
+                },
+                {
+                    "id": 667974,
+                    "step_id": 59864,
+                    "number": 4,
+                    "name": "npm_install",
+                    "status": "success",
+                    "exit_code": 0,
+                    "started": 1775760242,
+                    "stopped": 1775760251,
+                    "version": 4,
+                    "depends_on": [
+                        "restore_cache"
+                    ],
+                    "image": "mcr.microsoft.com/playwright:v1.58.0-noble"
+                },
+                {
+                    "id": 667975,
+                    "step_id": 59864,
+                    "number": 5,
+                    "name": "lint",
+                    "status": "success",
+                    "exit_code": 0,
+                    "started": 1775760251,
+                    "stopped": 1775760255,
+                    "version": 4,
+                    "depends_on": [
+                        "npm_install"
+                    ],
+                    "image": "mcr.microsoft.com/playwright:v1.58.0-noble"
+                },
+                {
+                    "id": 667976,
+                    "step_id": 59864,
+                    "number": 6,
+                    "name": "typecheck",
+                    "status": "success",
+                    "exit_code": 0,
+                    "started": 1775760251,
+                    "stopped": 1775760255,
+                    "version": 4,
+                    "depends_on": [
+                        "npm_install"
+                    ],
+                    "image": "mcr.microsoft.com/playwright:v1.58.0-noble"
+                },
+                {
+                    "id": 667977,
+                    "step_id": 59864,
+                    "number": 7,
+                    "name": "run_tests",
+                    "status": "failure",
+                    "exit_code": 1,
+                    "started": 1775760252,
+                    "stopped": 1775761065,
+                    "version": 4,
+                    "depends_on": [
+                        "npm_install",
+                        "fetch_secrets"
+                    ],
+                    "image": "mcr.microsoft.com/playwright:v1.58.0-noble"
+                },
+                {
+                    "id": 667978,
+                    "step_id": 59864,
+                    "number": 8,
+                    "name": "upload_report",
+                    "status": "success",
+                    "exit_code": 0,
+                    "started": 1775761065,
+                    "stopped": 1775761067,
+                    "version": 4,
+                    "depends_on": [
+                        "run_tests"
+                    ],
+                    "image": "docker.io/amazon/aws-cli:2.27.33"
+                },
+                {
+                    "id": 667979,
+                    "step_id": 59864,
+                    "number": 9,
+                    "name": "rebuild_cache",
+                    "status": "skipped",
+                    "exit_code": 0,
+                    "started": 1775761065,
+                    "stopped": 1775761065,
+                    "version": 3,
+                    "depends_on": [
+                        "run_tests"
+                    ],
+                    "image": "docker.io/plugins/s3-cache:latest"
+                },
+                {
+                    "id": 667980,
+                    "step_id": 59864,
+                    "number": 10,
+                    "name": "flush_cache",
+                    "status": "skipped",
+                    "exit_code": 0,
+                    "started": 1775761065,
+                    "stopped": 1775761065,
+                    "version": 3,
+                    "depends_on": [
+                        "rebuild_cache"
+                    ],
+                    "image": "docker.io/plugins/s3-cache:latest"
+                }
+            ]
+        }
+    ]
+}
