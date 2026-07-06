@@ -28,6 +28,17 @@ The first run downloads the package and installs deps (~10 seconds). Subsequent 
 
 To pin a version: `drone-mcp@0.1.0`. To install directly from GitHub instead (e.g. for unreleased changes on `main`): `github:dvd-rsnw/drone-mcp`.
 
+### From GitHub Packages
+
+Releases are also published to [GitHub Packages](https://github.com/dvd-rsnw/drone-mcp/pkgs/npm/drone-mcp) as `@dvd-rsnw/drone-mcp`. GitHub Packages requires authentication even for public packages, so add this to your `~/.npmrc`:
+
+```ini
+@dvd-rsnw:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+```
+
+where `GITHUB_TOKEN` is a [personal access token](https://github.com/settings/tokens) with the `read:packages` scope. Then reference `@dvd-rsnw/drone-mcp` instead of `drone-mcp` in your MCP config.
+
 ## Configuration
 
 `DRONE_SERVER` and `DRONE_TOKEN` are resolved in this order (first match wins):

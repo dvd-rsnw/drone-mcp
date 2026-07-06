@@ -1,5 +1,5 @@
 {
-  "name": "drone-mcp",
+  "name": "@dvd-rsnw/drone-mcp",
   "version": "0.1.0",
   "description": "Model Context Protocol server for Drone CI — read pipeline status, fetch failed-step logs, restart builds, and more from your AI assistant.",
   "keywords": [
@@ -28,6 +28,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/index.ts",
